@@ -1,4 +1,4 @@
-# 1.1 Data Velocity
+# Data Velocity
 
 The choice of data processing velocity is pivotal in determining the kind of data retrieval and vector compute tasks you can perform. Different velocities offer distinct advantages and make different use cases possible. Here's a breakdown of the three primary velocity categories:
 
@@ -30,7 +30,7 @@ The choice of data processing velocity is pivotal in determining the kind of dat
 |**Example Data**| Social media feeds, stock market transactions, sensor readings, clickstream data, ad requests and responses. A credit card company aiming to detect fraudulent transactions in real-time benefits from streaming data. Real-time detection can prevent financial losses and protect customers from fraudulent activities.|
 |**Properties**| Stream processing handles data in real-time, making it highly dynamic. It's designed to support immediate updates and changes, making it ideal for use cases that require up-to-the-second insights.|
 |**Formats**| Data in stream processing is often in Protobuf, Avro, or other formats optimized for small footprint and fast serialization.|
-|**Databases**| Real-time databases include [Clickhouse](https://clickhouse.com/), [Redis](https://redis.com/), and [RethinkDB](https://rethinkdb.com/). There are also in-memory databases, such as [DuckDB](https://duckdb.org/) and [KuzuDB](https://kuzudb.com/), which can be used to create real-time dashboards. However, depending on the deployment strategy chosen, these databases may lose the data once the application is terminated.|
+|**Databases**| Real-time databases include [Clickhouse](https://clickhouse.com/), [Redis](https://redis.io/), and [RethinkDB](https://rethinkdb.com/). There are also in-memory databases, such as [DuckDB](https://duckdb.org/) and [KuzuDB](https://kuzudb.com/), which can be used to create real-time dashboards. However, depending on the deployment strategy chosen, these databases may lose the data once the application is terminated.|
 
 Most systems deployed in production at scale combine stream and batch processing. This enables you to leverage the immediacy of real-time updates and the depth of historical data. But reconciling stream and batch processes in a single system introduces trade-off decisions – trade-off decisions you must make to keep your data consistent across systems and across time.
 
@@ -38,7 +38,7 @@ Most systems deployed in production at scale combine stream and batch processing
 
 When choosing and configuring the data sources for a vector retrieval system, it’s important to consider tradeoffs between data velocity, complexity, and model size. 
 
-<img src=assets/building_blocks/data_sources/bb1-2.png alt="Velocity-complexity tradeoff" data-size="100" />
+<img src="../../assets/building_blocks/data_sources/bb1-2.png" alt="Velocity-complexity tradeoff" data-size="100" />
 
 ### Velocity vs Complexity Tradeoff
 
