@@ -73,33 +73,33 @@
     "comment": ""
   },
   "embeddings_image": {
-    "support": "none",
-    "source_url": "",
+    "support": "partial",
+    "source_url": "https://github.com/vespa-engine/sample-apps/tree/master/text-image-search",
     "comment": ""
   },
   "embeddings_structured": {
-    "support": "",
+    "support": "partial",
     "source_url": "",
-    "comment": ""
+    "comment": "Through the support for custom ONNX models, Vespa also supports structured embeddings"
   },
   "rag": {
-    "support": "",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://docs.vespa.ai/en/llms-rag.html",
     "comment": ""
   },
   "recsys": {
-    "support": "",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://docs.vespa.ai/en/tutorials/news-4-embeddings.html",
     "comment": ""
   },
   "langchain": {
     "support": "full",
-    "source_url": "",
+    "source_url": "https://python.langchain.com/v0.1/docs/integrations/retrievers/vespa/",
     "comment": ""
   },
   "llamaindex": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://docs.llamaindex.ai/en/stable/examples/vector_stores/VespaIndexDemo/",
     "comment": ""
   },
   "managed_cloud": {
@@ -133,9 +133,9 @@
     "comment": ""
   },
   "sharding": {
-    "support": "",
-    "source_url": "",
-    "comment": ""
+    "support": "full",
+    "source_url": "https://docs.vespa.ai/en/elasticity.html",
+    "comment": "Vespa distributes documents over nodes using buckets, see https://docs.vespa.ai/en/content/buckets.html"
   },
   "doc_size": {
     "bytes": 0,
@@ -149,25 +149,51 @@
     "source_url": "",
     "comment": ""
   },
+  "int8_quantization": {
+    "support": "full",
+    "source_url": "https://docs.vespa.ai/en/reference/tensor.html#tensor-type-spec",
+    "comment": ""
+  },
+  "binary_quantization": {
+    "support": "full",
+    "source_url": "https://blog.vespa.ai/scaling-large-vector-datasets-with-cohere-binary-embeddings-and-vespa/",
+    "comment": ""
+  },
+  "index_types": {
+    "value": [
+      "FLAT",
+      "HNSW",
+      "HNSW-BQ",
+      "SPANN"
+    ],
+    "source_url": "https://blog.vespa.ai/vespa-hybrid-billion-scale-vector-search/#vector-indexing-and-serving-architecture",
+    "comment": ""
+  },
   "github_stars": {
-    "value": 5180,
+    "value": 5989,
     "source_url": "https://github.com/vespa-engine/vespa",
     "comment": "",
     "value_90_days": 0
   },
   "docker_pulls": {
+    "value": 12288050,
+    "source_url": "https://hub.docker.com/r/vespaengine/vespa",
+    "comment": "",
+    "value_90_days": 0
+  },
+  "pypi_downloads": {
+    "value": 896136,
+    "source_url": "https://pypi.org/project/pyvespa/",
+    "comment": "",
+    "value_90_days": 139620
+  },
+  "npm_downloads": {
     "value": 0,
     "source_url": "",
     "comment": "",
     "value_90_days": 0
   },
-  "pypi_downloads": {
-    "value": 130986,
-    "source_url": "https://pypi.org/project/VESPA/",
-    "comment": "",
-    "value_90_days": 2363
-  },
-  "npm_downloads": {
+  "crates_io_downloads": {
     "value": 0,
     "source_url": "",
     "comment": "",

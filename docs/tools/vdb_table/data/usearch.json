@@ -122,7 +122,7 @@
     "comment": ""
   },
   "disk_index": {
-    "support": "partial",
+    "support": "full",
     "source_url": "https://github.com/unum-cloud/usearch/#serialization--serving-index-from-disk",
     "comment": ""
   },
@@ -148,8 +148,27 @@
     "source_url": "",
     "comment": ""
   },
+  "int8_quantization": {
+    "support": "full",
+    "source_url": "https://github.com/unum-cloud/usearch?tab=readme-ov-file#memory-efficiency-downcasting-and-quantization",
+    "comment": ""
+  },
+  "binary_quantization": {
+    "support": "full",
+    "source_url": "https://github.com/ashvardanian/usearch-binary",
+    "comment": ""
+  },
+  "index_types": {
+    "value": [
+      "FLAT",
+      "HNSW",
+      "HNSW-BQ"
+    ],
+    "source_url": "",
+    "comment": ""
+  },
   "github_stars": {
-    "value": 1412,
+    "value": 2489,
     "source_url": "https://github.com/unum-cloud/usearch",
     "comment": "",
     "value_90_days": 0
@@ -161,15 +180,21 @@
     "value_90_days": 0
   },
   "pypi_downloads": {
-    "value": 630465,
+    "value": 2796639,
     "source_url": "https://pypi.org/project/usearch/",
     "comment": "",
-    "value_90_days": 229239
+    "value_90_days": 762768
   },
   "npm_downloads": {
-    "value": 0,
-    "source_url": "",
+    "value": 132580,
+    "source_url": "https://www.npmjs.com/package/usearch",
     "comment": "",
-    "value_90_days": 0
+    "value_90_days": 23315
+  },
+  "crates_io_downloads": {
+    "value": 132012,
+    "source_url": "https://crates.io/crates/usearch",
+    "comment": "",
+    "value_90_days": 1587
   }
 }

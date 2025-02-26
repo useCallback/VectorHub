@@ -25,16 +25,16 @@
     "source_url": "",
     "comment": ""
   },
-  "vector_launch_year": 0,
+  "vector_launch_year": 2023,
   "metadata_filter": {
     "support": "full",
-    "source_url": "",
+    "source_url": "https://turbopuffer.com/docs/reference/query",
     "comment": ""
   },
   "hybrid_search": {
-    "support": "none",
-    "source_url": "",
-    "comment": ""
+    "support": "partial",
+    "source_url": "https://turbopuffer.com/docs/hybrid-search",
+    "comment": "Fusion not supported in-DB at the moment"
   },
   "facets": {
     "support": "none",
@@ -57,13 +57,13 @@
     "comment": ""
   },
   "bm25": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://turbopuffer.com/docs/upsert#schema",
     "comment": ""
   },
   "full_text": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://turbopuffer.com/docs/upsert#schema",
     "comment": ""
   },
   "embeddings_text": {
@@ -107,7 +107,7 @@
     "comment": ""
   },
   "pricing": {
-    "value": "$1/million vecs, $4/million queries https://turbopuffer.com",
+    "value": "$1/million vecs, $4/million queries",
     "source_url": "https://turbopuffer.com/",
     "comment": ""
   },
@@ -143,9 +143,16 @@
     "comment": ""
   },
   "vector_dims": {
-    "value": 1536,
+    "value": 10752,
     "unlimited": false,
-    "source_url": "",
+    "source_url": "https://turbopuffer.com/docs/get-started/limits",
+    "comment": ""
+  },
+  "index_types": {
+    "value": [
+      "SPANN"
+    ],
+    "source_url": "https://turbopuffer.com/architecture#:~:text=on%20SPANN.-,SPANN,-is%20a%20centroid",
     "comment": ""
   },
   "github_stars": {
@@ -161,12 +168,18 @@
     "value_90_days": 0
   },
   "pypi_downloads": {
-    "value": 4073,
+    "value": 3118597,
     "source_url": "https://pypi.org/project/turbopuffer/",
     "comment": "",
-    "value_90_days": 4022
+    "value_90_days": 919951
   },
   "npm_downloads": {
+    "value": 572990,
+    "source_url": "https://www.npmjs.com/package/@turbopuffer/turbopuffer",
+    "comment": "",
+    "value_90_days": 172748
+  },
+  "crates_io_downloads": {
     "value": 0,
     "source_url": "",
     "comment": "",

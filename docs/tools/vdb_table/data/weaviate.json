@@ -33,7 +33,7 @@
   },
   "hybrid_search": {
     "support": "full",
-    "source_url": "",
+    "source_url": "https://weaviate.io/developers/weaviate/search/hybrid",
     "comment": "RRF*+RSF*"
   },
   "facets": {
@@ -148,28 +148,50 @@
     "source_url": "",
     "comment": ""
   },
+  "binary_quantization": {
+    "support": "partial",
+    "source_url": "https://weaviate.io/developers/weaviate/configuration/bq-compression",
+    "comment": "via Binary Quantization of index"
+  },
+  "index_types": {
+    "value": [
+      "FLAT",
+      "FLAT-BQ",
+      "HNSW",
+      "HNSW-PQ",
+      "HNSW-BQ"
+    ],
+    "source_url": "https://weaviate.io/developers/weaviate/concepts/vector-index",
+    "comment": "Option to dynamically switch from Flat to HNSW"
+  },
   "github_stars": {
-    "value": 8856,
+    "value": 12501,
     "source_url": "https://github.com/weaviate/weaviate",
     "comment": "",
     "value_90_days": 0
   },
   "docker_pulls": {
-    "value": 0,
-    "source_url": "",
+    "value": 7751281,
+    "source_url": "https://hub.docker.com/r/semitechnologies/weaviate",
     "comment": "",
     "value_90_days": 0
   },
   "pypi_downloads": {
-    "value": 5560792,
+    "value": 61925866,
     "source_url": "https://pypi.org/project/weaviate-client/",
     "comment": "",
-    "value_90_days": 1687454
+    "value_90_days": 20475383
   },
   "npm_downloads": {
-    "value": 253954,
+    "value": 679847,
     "source_url": "https://www.npmjs.com/package/weaviate-client",
     "comment": "",
-    "value_90_days": 45117
+    "value_90_days": 298636
+  },
+  "crates_io_downloads": {
+    "value": 968,
+    "source_url": "https://crates.io/crates/weaviate-client",
+    "comment": "",
+    "value_90_days": 198
   }
 }

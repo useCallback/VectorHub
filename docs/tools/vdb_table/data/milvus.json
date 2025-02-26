@@ -33,8 +33,8 @@
     "comment": ""
   },
   "hybrid_search": {
-    "support": "",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/multi-vector-search.md",
     "comment": ""
   },
   "facets": {
@@ -48,28 +48,28 @@
     "comment": ""
   },
   "multi_vec": {
-    "support": "",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/multi-vector-search.md",
     "comment": ""
   },
   "sparse_vectors": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/release_notes.md#Sparse-Vector-Beta",
     "comment": ""
   },
   "bm25": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/embed-with-bm25.md",
     "comment": ""
   },
   "full_text": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/release_notes.md#Inverted-Index-and-Fuzzy-Match",
     "comment": ""
   },
   "embeddings_text": {
-    "support": "none",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/embeddings.md",
     "comment": ""
   },
   "embeddings_image": {
@@ -94,12 +94,12 @@
   },
   "langchain": {
     "support": "full",
-    "source_url": "",
+    "source_url": "https://milvus.io/docs/integrate_with_langchain.md",
     "comment": ""
   },
   "llamaindex": {
     "support": "full",
-    "source_url": "",
+    "source_url": "https://milvus.io/docs/integrate_with_llamaindex.md",
     "comment": ""
   },
   "managed_cloud": {
@@ -108,8 +108,8 @@
     "comment": ""
   },
   "pricing": {
-    "value": "",
-    "source_url": "",
+    "value": "Zilliz Cloud",
+    "source_url": "https://zilliz.com/pricing",
     "comment": ""
   },
   "in_process": {
@@ -133,24 +133,50 @@
     "comment": ""
   },
   "sharding": {
-    "support": "",
-    "source_url": "",
+    "support": "full",
+    "source_url": "https://milvus.io/docs/glossary.md#Sharding",
     "comment": ""
   },
   "doc_size": {
     "bytes": 0,
-    "unlimited": false,
-    "source_url": "",
-    "comment": ""
+    "unlimited": true,
+    "source_url": "https://milvus.io/docs/product_faq.md#What-is-the-maximum-dataset-size-Milvus-can-handle",
+    "comment": "Milvus is a distributed system, no hard limitations for counts of entities in one collection"
   },
   "vector_dims": {
-    "value": 32768,
-    "unlimited": false,
-    "source_url": "",
+    "value": 0,
+    "unlimited": true,
+    "source_url": "https://milvus.io/docs/latest/configure_proxy.md#proxymaxDimension",
+    "comment": "change via proxy.MaxDimension in config.yaml, this value can be unlimited"
+  },
+  "int8_quantization": {
+    "support": "partial",
+    "source_url": "https://milvus.io/docs/index.md#:~:text=IVF_SQ8",
+    "comment": "via IVF_SQ8 index type"
+  },
+  "binary_quantization": {
+    "support": "partial",
+    "source_url": "https://milvus.io/docs/index.md#binary",
+    "comment": "via BIN_FLAT, BIN_IVF_FLAT index type"
+  },
+  "index_types": {
+    "value": [
+      "FLAT",
+      "HNSW",
+      "ANNOY",
+      "IVF",
+      "IVF-PQ",
+      "IVF-BQ",
+      "IVF-SQ",
+      "SCANN",
+      "DiskANN",
+      "GPU Index"
+    ],
+    "source_url": "https://milvus.io/docs/index.md",
     "comment": ""
   },
   "github_stars": {
-    "value": 25522,
+    "value": 32650,
     "source_url": "https://github.com/milvus-io/milvus",
     "comment": "",
     "value_90_days": 0
@@ -162,15 +188,21 @@
     "value_90_days": 0
   },
   "pypi_downloads": {
-    "value": 7431587,
+    "value": 15318275,
     "source_url": "https://pypi.org/project/pymilvus/",
     "comment": "",
-    "value_90_days": 1415786
+    "value_90_days": 4119847
   },
   "npm_downloads": {
-    "value": 0,
-    "source_url": "",
+    "value": 1945041,
+    "source_url": "https://www.npmjs.com/package/@zilliz/milvus2-sdk-node",
     "comment": "",
-    "value_90_days": 0
+    "value_90_days": 862774
+  },
+  "crates_io_downloads": {
+    "value": 3621,
+    "source_url": "https://crates.io/crates/milvus",
+    "comment": "",
+    "value_90_days": 736
   }
 }
